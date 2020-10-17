@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html class="loading" lang="fa" data-textdirection="rtl" dir="rtl">
+<!-- BEGIN: Head-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>@ViewData["Title"] - مجتمع آموزشی سخن</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/assetsAdmin/images/ico/favicon.ico">
+    <meta name="theme-color" content="#5A8DEE">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="~/assetsAdmin/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assetsAdmin/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="~/assetsAdmin/vendors/css/extensions/swiper.min.css">
+    <!-- END: Vendor CSS-->
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="~/assetsAdmin/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assetsAdmin/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="~/assetsAdmin/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="~/assetsAdmin/css/components.css">
+    <link rel="stylesheet" type="text/css" href="~/assetsAdmin/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="~/assetsAdmin/css/themes/semi-dark-layout.css">
+    <!-- END: Theme CSS-->
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="~/assetsAdmin/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="~/assetsAdmin/css/pages/dashboard-ecommerce.css">
+    <!-- END: Page CSS-->
+
+</head>
+<!-- END: Head-->
+<!-- BEGIN: Body-->
+<body class="vertical-layout vertical-menu-modern 2-columns  navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <partial name="_HorizentalMenuPartial" />
+    <partial name="_VerticalMenuPartial" />
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-body">
+             @RenderBody()
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0">
+            <span class="float-left d-inline-block">مجتمع آموزشی سخن</span>
+            <span class="float-right d-sm-inline-block d-none">امروز شنبه 29 فروردین 1399<i class="bx bxs-heart pink ml-50 font-small-3"></i></span>
+        </p>
+    </footer>
+    <!-- END: Footer-->
+    <!-- BEGIN: Vendor JS-->
+    <script src="~/assetsAdmin/vendors/js/vendors.min.js"></script>
+    <script src="~/assetsAdmin/fonts/LivIconsEvo/js/LivIconsEvo.tools.min.js"></script>
+    <script src="~/assetsAdmin/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
+    <script src="~/assetsAdmin/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="~/assetsAdmin/vendors/js/charts/apexcharts.min.js"></script>
+    <script src="~/assetsAdmin/vendors/js/extensions/swiper.min.js"></script>
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Theme JS-->
+    <script src="~/assetsAdmin/js/scripts/configs/vertical-menu-light.js"></script>
+    <script src="~/assetsAdmin/js/core/app-menu.js"></script>
+    <script src="~/assetsAdmin/js/core/app.js"></script>
+    <script src="~/assetsAdmin/js/scripts/components.js"></script>
+    <script src="~/assetsAdmin/js/scripts/footer.js"></script>
+    <script src="~/assetsAdmin/js/scripts/customizer.js"></script>
+    <!-- END: Theme JS-->
+    <!-- BEGIN: Page JS-->
+    <script src="~/assetsAdmin/js/scripts/pages/dashboard-ecommerce.js"></script>
+    <!-- END: Page JS-->
+    @RenderSection("Scripts", required: false)
+</body>
+<!-- END: Body-->
+</html>

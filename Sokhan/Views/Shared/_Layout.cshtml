@@ -1,49 +1,363 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="fa" dir="rtl">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Sokhan</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>@ViewData["Title"] - مجتمع آموزشی سخن</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/assets/img/favicon.ico">
+
+    <meta name="theme-color" content="#c40316">
+
+    <!-- CSS
+    ========================= -->
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="~/assets/css/plugins.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Sokhan</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <partial name="_LoginPartial" />
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+    <div class="off_canvars_overlay"></div>
+    <!--Offcanvas menu area start-->
+    <div class="Offcanvas_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="ion-navicon"></i></a>
+                    </div>
+                    <div class="Offcanvas_menu_wrapper">
+                        <div class="canvas_close">
+                            <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
+                        </div>
+                        <div class="header_top_settings text-right">
+                            <ul>
+                                <li><a href="coming-soon.html">ورود دانش آموز</a></li>
+                                <li>تلفن تماس: <a class="ltr-text" href="tel:+(+98)800456789">(+98) 800 456 789 </a></li>
+                            </ul>
+                        </div>
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li class="menu-item-has-children">
+                                    <a href="index.html">صفحه نخست</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">اخبار مجتمع</a>
+                                </li>
+                                <li class="menu-item-has-children active">
+                                    <a href="#">مدارس</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="underConstruction.html">دبستان و پیش دبستان</a></li>
+                                        <li><a href="underConstruction.html">متوسطه دوره اول</a></li>
+                                        <li><a href="underConstruction.html">متوسطه دوره دوم</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="menu-item-has-children">
+                                    <a href="#">دپارتمان ها </a>
+                                    <ul class="sub-menu">
+                                        <li><a href="underConstruction.html">جشنواره ها</a></li>
+                                        <li><a href="underConstruction.html">المپیادها</a></li>
+                                        <li><a href="underConstruction.html">فوق برنامه</a></li>
+                                        <li><a href="underConstruction.html">سیاستهای کلی</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="menu-item-has-children">
+                                    <a href="underConstruction.html"> درباره ما</a>
+                                </li>
+
+                                <li class="menu-item-has-children">
+                                    <a href="underConstruction.html> تماس با ما</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Offcanvas_footer">
+                            <span><a href="#"><i class="fa fa-envelope-o"></i> info@sokhanschools.com</a></span>
+                            <ul>
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - Sokhan - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
+    </div>
+    <!--Offcanvas menu area end-->
+    <!--header area start-->
+    <header>
+        <div class="main_header">
+            <div class="container">
+                <!--header top start-->
+                <div class="header_top">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-4 col-md-5">
+                            <div class="antomi_message">
+                                <p>آینده ای روشن برای امیدهای شما در مجتمع آموزشی سخن</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7">
+                            <div class="header_top_settings text-right">
+                                <ul>
+                                    <li><a href="coming-soon.html">ورود دانش آموز</a></li>
+                                    <li>تلفن تماس: <a class="ltr-text" href="tel:+(+98)800456789">(+98) 800 456 789 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--header top start-->
+                <!--header middel start-->
+                <div class="header_middle sticky-header">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-6">
+                                <a href="underConstruction.html"><img src="~/assets/img/logo/logo.png" alt=""></a>
+                        </div>
+                        <div class="col-lg-9 col-md-12">
+                            <div class="main_menu menu_position text-center">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">صفحه نخست</a></li>
+                                        <li><a href="underConstruction.html">اخبار مجتمع</a></li>
+                                        <li>
+                                            <a href="#">مدارس<i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="underConstruction.html">دبستان و پیش دبستان</a></li>
+                                                <li><a href="underConstruction.html">متوسطه دوره اول</a></li>
+                                                <li><a href="underConstruction.html">متوسطه دوره دوم</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">دپارتمانها <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="underConstruction.html">جشنواره ها</a></li>
+                                                <li><a href="underConstruction.html">المپیادها</a></li>
+                                                <li><a href="underConstruction.html">فوق برنامه</a></li>
+                                                <li><a href="underConstruction.html">سیاست های کلی و خط مشی</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="underConstruction.html">درباره ما</a></li>
+                                        <li><a href="underConstruction.html"> تماس با ما</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header area end-->
+    <!--slider area start-->
+    <section class="slider_section slider_s_three mb-60 mt-20">
+        <div class="slider_area slider3_carousel owl-carousel">
+            <div class="single_slider d-flex align-items-center" data-bgimg="assets/img/slider/2.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-12">
+                            <div class="slider_content slider_c_three color_white">
+                                <h3>حساسیت در انتخاب اساتید</h3>
+                                <h1><span style="color:red">بهترین اساتید استان </span><br> متدهای جدید آموزشی</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="single_slider d-flex align-items-center" data-bgimg="assets/img/slider/1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="slider_content slider_c_three color_white">
+                                <h3>فعالیتهای پژوهشی</h3>
+                                <h1><span style="color:red">هم در تابستان <br> هم در طول سال تحصیلی</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_slider d-flex align-items-center" data-bgimg="assets/img/slider/3.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="slider_content slider_c_three color_white">
+                                <h3><span style="color:deeppink">متدهای جدید آموزشی</span></h3>
+                                <h1>آموزشهای آنلاین در دوران کرونا</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--slider area end-->
+    <!--shipping area start-->
+    <div class="shipping_area mb-60">
+        <div class="container">
+            <div class="shipping_inner">
+                <div class="single_shipping">
+                    <div class="shipping_icone">
+                        <img src="~/assets/img/about/shipping1.png" alt="">
+                    </div>
+                    <div class="shipping_content">
+                        <h4>برنامه ریزی دقیق</h4>
+                        <p>با کمک مشاوران برتر کشور</p>
+                    </div>
+                </div>
+                <div class="single_shipping">
+                    <div class="shipping_icone">
+                        <img src="~/assets/img/about/shipping2.png" alt="">
+                    </div>
+                    <div class="shipping_content">
+                        <h4>برنامه ریزی دقیق</h4>
+                        <p>با کمک مشاوران برتر کشور</p>
+                    </div>
+                </div>
+                <div class="single_shipping">
+                    <div class="shipping_icone">
+                        <img src="~/assets/img/about/shipping3.png" alt="">
+                    </div>
+                    <div class="shipping_content">
+                        <h4>برنامه ریزی دقیق</h4>
+                        <p>با کمک مشاوران برتر کشور</p>
+                    </div>
+                </div>
+                <div class="single_shipping">
+                    <div class="shipping_icone">
+                        <img src="~/assets/img/about/shipping4.png" alt="">
+                    </div>
+                    <div class="shipping_content">
+                        <h4>برنامه ریزی دقیق</h4>
+                        <p>با کمک مشاوران برتر کشور</p>
+                    </div>
+                </div>
+                <div class="single_shipping">
+                    <div class="shipping_icone">
+                        <img src="~/assets/img/about/shipping5.png" alt="">
+                    </div>
+                    <div class="shipping_content">
+                        <h4>برنامه ریزی دقیق</h4>
+                        <p>با کمک مشاوران برتر کشور</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--shipping area end-->
+    <!--home section bg area start-->
+    <div class="home_section_bg">
+        <div class="container">
+            <div class="row">
+
+                 @RenderBody()
+
+            </div>
+        </div>
+
+    </div>
+    <!--home section bg area end-->
+    <!--footer area start-->
+    <footer class="footer_widgets">
+        <!--newsletter area start-->
+        <div class="newsletter_area">
+            <div class="container">
+                <div class="newsletter_inner">
+                    سخنی از بزرگان - پیامهای آموزشی - تصویر
+                </div>
+            </div>
+        </div>
+        <!--newsletter area end-->
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-5">
+                        <div class="widgets_container widget_menu">
+                            <h3>اخبار</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="about.html">اطلاعیه های مهم</a></li>
+                                    <li><a href="#">اخبار آموزشی</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-5">
+                        <div class="widgets_container widget_menu">
+                            <h3>دپارتمانها</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="about.html">اطلاعیه های مهم</a></li>
+                                    <li><a href="#">اخبار آموزشی</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>مدارس</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="my-account.html">ابتدایی و پیش دبستانی</a></li>
+                                    <li><a href="my-account.html">ابتدایی و پیش دبستانی</a></li>
+                                    <li><a href="my-account.html">ابتدایی و پیش دبستانی</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-7 col-sm-12">
+                        <div class="widgets_container">
+                            <h3>اطلاعات تماس</h3>
+                            <div class="footer_contact">
+                                <div class="footer_contact_inner">
+                                    <div class="contact_icone">
+                                        <img src="~/assets/img/icon/icon-phone.png" alt="">
+                                    </div>
+                                    <div class="contact_text">
+                                        <p>تلفن تماس : <br> <strong class="ltr-text">(+98) 123 456 789</strong></p>
+                                    </div>
+                                </div>
+                                <p>مجتمع آموزشی سخن در کرج ، مهرشهر ، بلوار ارم ، خیابان ۱۱۷</p>
+                            </div>
+
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!--footer area end-->
+    <!-- Plugins JS -->
+    <script src="~/assets/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="~/assets/js/main.js"></script>
     @RenderSection("Scripts", required: false)
+
+
 </body>
+
 </html>
