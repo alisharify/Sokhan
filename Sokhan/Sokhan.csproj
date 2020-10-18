@@ -6,6 +6,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <Content Remove="Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Migrations\20201018061619_init.cs" />
+    <Compile Include="Migrations\20201018061619_init.Designer.cs" />
+    <Compile Include="Migrations\20201018111206_i.cs" />
+    <Compile Include="Migrations\20201018111206_i.Designer.cs" />
+    <Compile Include="Migrations\SchoolDatabaseContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.8" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.8" />
@@ -20,7 +35,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Migrations\" />
     <Folder Include="wwwroot\assets\audio\" />
     <Folder Include="wwwroot\assets\img\about\" />
     <Folder Include="wwwroot\assets\img\blog\" />

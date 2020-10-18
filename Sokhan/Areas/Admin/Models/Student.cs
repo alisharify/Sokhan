@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Sokhan.Models
+namespace Sokhan.Areas.Admin.Models
 {
     public class Student
     {

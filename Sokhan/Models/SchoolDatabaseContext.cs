@@ -26,9 +26,5 @@ namespace Sokhan.Models
             string s = "Server=.;Database=Sokhan;User Id=SA;Password=1234567890;";// Configuration.GetConnectionString("DefaultConnection");
             optionsBuilder.UseSqlServer(s);
         }
-
-        //public DbSet<Student> Students { get; set; }
-
-        public DbSet<Sokhan.Models.Student> Student { get; set; }
     }
 }

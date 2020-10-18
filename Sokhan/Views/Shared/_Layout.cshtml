@@ -38,7 +38,11 @@
                         </div>
                         <div class="header_top_settings text-right">
                             <ul>
-                                <li><a href="coming-soon.html">ورود دانش آموز</a></li>
+                                <li>
+                                    <a asp-area="Admin" asp-controller="Login" asp-action="Index">
+                                        ورود دانش آموز
+                                    </a>
+                                </li>
                                 <li>تلفن تماس: <a class="ltr-text" href="tel:+(+98)800456789">(+98) 800 456 789 </a></li>
                             </ul>
                         </div>
@@ -112,7 +116,10 @@
                         <div class="col-lg-8 col-md-7">
                             <div class="header_top_settings text-right">
                                 <ul>
-                                    <li><a href="coming-soon.html">ورود دانش آموز</a></li>
+                                    <li>
+                                        <a asp-area="Admin" asp-controller="Login" asp-action="Index">
+                                            ورود دانش آموز
+                                        </a></li>
                                     <li>تلفن تماس: <a class="ltr-text" href="tel:+(+98)800456789">(+98) 800 456 789 </a></li>
                                 </ul>
                             </div>
@@ -124,7 +131,7 @@
                 <div class="header_middle sticky-header">
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-md-6">
-                                <a href="underConstruction.html"><img src="~/assets/img/logo/logo.png" alt=""></a>
+                            <a href="underConstruction.html"><img src="~/assets/img/logo/logo.png" alt=""></a>
                         </div>
                         <div class="col-lg-9 col-md-12">
                             <div class="main_menu menu_position text-center">
@@ -263,7 +270,7 @@
         <div class="container">
             <div class="row">
 
-                 @RenderBody()
+                @RenderBody()
 
             </div>
         </div>

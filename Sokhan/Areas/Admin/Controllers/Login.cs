@@ -18,5 +18,7 @@ namespace Sokhan.Areas.Admin.Controllers
         {
             return RedirectToAction("Index", "Teachers");
         }
+
+        
     }
 }
